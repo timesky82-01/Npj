@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+h1 {
+    color: saddlebrown;
+}
+
+body {
+    width: 669px;
+    height: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px dotted red;
+}
+
+#topmenu {
+    width: 669px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: -16px;
+    padding: 0;
+    background-color: rgb(8, 195, 108);
+}
+
+#topmenu ul li {
+    list-style: none;
+    float: left;
+    color: white;
+    background-color: rgb(8, 195, 108);
+    text-align: center;
+    vertical-align: middle;
+    margin: 13px;
+    margin-top: 19px;
+}
+
+#topmenu .menulink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 28px;
+    width: auto;
+}
+
+.BrNews {
+    position: relative;
+    background-color: rgb(234, 237, 242);
+    height: 115px;
+}
+
+.Snews {
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    height: 89px;
+    width: 640px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 15px;
+
+}
+
+.BrNews ul li {
+    list-style: none;
+    float: left;
+    background-color: #fff;
+}
+
+.BrNews ul li:first-child {
+    margin-top: 7px;
+}
+
+.BrNews ul li:nth-child(2) {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+
+}
+
+.BrNews ul li:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 36px;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 14px;
+    border-right: 2px solid rgb(234, 237, 242);
+    height: 89px;
+}
+
+.cha {
+    width: 16px;
+    border-radius: 50%;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    height: 89px;
+    background: none;
+    text-decoration: none;
+    border: 0;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 40px;
+}
+
+.main ul li {
+    list-style: none;
+}
+
+.a1{
+    position: relative;
+    height: 275px;
+    border: 1px dotted blue;
+}
+
+.Mtop{
+    float: left;
+}
+
+.MTop button{
+text-align: center;
+background: none;
+border-color: rgb(8, 195, 108);
+border-radius: 5px;
+color : rgb(8, 195, 108);
+}
+
+.MBot img{
+    width:238px;
+    height: 161px;
+}
