@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- <html lang="en">  한글로 변경-->
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 파비콘 추가 -->
+    <link rel="shortcut icon" href="favicon.png">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  og:이미지 추가 주로 카카오톡에서 뜨는 이미지 -->
+    <meta property="og:image" content="og_img.jpg">
+    
+    <!-- 폰트추가 -->
+    <link href='./css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    
+    <!-- 리셋 추가 -->
+    <link href='./css/reset.css' rel='stylesheet' type='text/css'>
+    <!-- 아이오닉 아이콘폰트 추가 2.0버전 스크립트 없는 버전 -->
+    <link href='./css/ionicons.css' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Naver News</title>
+
+</head>
+
+<body>
+    <!-- main_wrap 페이지별 클래스 분기 -->
+    <div class="main_wrap">
+        <!-- gnb type_01 ie8고려 보통의 모바일에서 쓰지 않는다.
+        모바일 브라우저는 대부분 모던 브라우저로 css3를 거의 지원하기 때문-->
+        <div class="gnb type_01">
+            <!-- nav 와 같은 html5 태그는  ie8에서 사용하려면 별도의 플러그인이
+            필요하므로 안쓰는게 좋다.-->
+            <div class="nav" id="topmenu">
+                <!-- 상대위치를 주어서 .btn_more의  절대위치 고정 -->
+                <!-- 스크롤 가능해야함 overflow-->
+                <ul class="list_menu">
+                    <li><a class="menu" href="">뉴스</a></li>
+                    <li><a class="menu" href="">테크</a></li>
+                    <li><a class="menu" href="">연예</a></li>
+                    <li><a class="menu" href="">뿜</a></li>
+                    <li><a class="menu" href="">디자인</a></li>
+                    <li><a class="menu" href="">영화</a></li>
+                    <li><a class="menu" href="">쇼핑</a></li>
+                    <li><a class="menu" href="">뿜</a></li>
+                    <li><a class="menu" href="">디자인</a></li>
+                    <li><a class="menu" href="">영화</a></li>
+                    <li><a class="menu" href="">쇼핑</a></li>
+                    <!-- <li><a class="menulink" href="">＋</a></li> 
+                    레이아웃을 파악하면 외부로 빼야 함-->
+                </ul>
+                <!-- 버튼위치 고정 -->
+                <button class="btn_more">
+                    <!--  -->
+                    <i class="ion-plus-round"></i>
+                    <!-- ir  접근성을 위해 문자를 이미지로 대체할때 
+                      텍스트값을 넣어주는 방법 -->
+                    <span class="ir">더보기</span>
+                </button>
+            </div>
+        </div>
+        <!--// gnb type_01-->
+
+        <!-- gnb type_02 flex 레이아웃-->
+        <!-- mt10은 마진이나 패딩을 강제로 넣는 방식으로 헬퍼css라고 부른다. 부트스트랩이나 벌마 ,뷰티파이같은 프레임워크에도 쓰는 보편적 방식이지만 호불호 갈림 -->
+        <div class="gnb type_02 mt10">
+            <div class="nav" id="topmenu">
+                <!-- 상대위치를 주어서 .btn_more의  절대위치 고정 -->
+                <!-- 스크롤 가능해야함 overflow-->
+                <ul class="list_menu">
+                    <li><a class="menu" href="">뉴스</a></li>
+                    <li><a class="menu" href="">테크</a></li>
+                    <li><a class="menu" href="">연예</a></li>
+                    <li><a class="menu" href="">뿜</a></li>
+                    <li><a class="menu" href="">디자인</a></li>
+                    <li><a class="menu" href="">영화</a></li>
+                    <li><a class="menu" href="">쇼핑</a></li>
+                    <li><a class="menu" href="">뿜</a></li>
+                    <li><a class="menu" href="">디자인</a></li>
+                    <li><a class="menu" href="">영화</a></li>
+                    <li><a class="menu" href="">쇼핑</a></li>
+                    <!-- <li><a class="menulink" href="">＋</a></li> 
+                    레이아웃을 파악하면 외부로 빼야 함-->
+                </ul>
+                <!-- 버튼위치 고정 -->
+                <button class="btn_more">
+                    <!--ionic icon  -->
+                    <i class="ion-plus-round"></i>
+                    <!-- ir  접근성을 위해 문자를 이미지로 대체할때 
+                      텍스트값을 넣어주는 방법 -->
+                    <span class="ir">더보기</span>
+                </button>
+            </div>
+        </div>
+        <!--// gnb type_02 -->
+        <div class="content" style="display: none;">
+
+
+            <div class=" BrNews " ">
+            <div class="Snews ">
+                <ul>
+                    <!-- <li> <br> 군 북 동해상으로 탄도미사일 2발 발사</li> 
+                br  삭제-->
+                    <li a class="BrImg "><img class="logo " src="./images/s1_1.jpg " alt="속보 이미지 "></li>
+                    <li> 군 북 동해상으로 탄도미사일 2발 발사</li>
+                    <li>채널A <img class="cha " src="./images/cha1_1.jpg " alt="채널A로고 "> 내용작성전
+                    </li>
+                    <li>
+                        <!-- <button class="btn "><a href="# ">∨</a></button> 버튼 이나 링크,인풋 처럼 액션이 취하는 곳은 독립적으로 .... 하위로 넣을수 없음 -->
+                        <button class="btn "><a href="# ">∨</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 향후 잡아줄게 -->
+        <div class="main ">
+            <ul>
+                <div class="a1 ">
+                    <li class="MTop ">
+                        <img src="./images/a1_1.png " alt="파이낸셜로고 ">
+                        <span>파이낸셜뉴스</span>
+                        <span>09월 15일 13:39</span>
+                        <button>＋구독</button>
+                    </li>
+                    <li class="MBot ">
+                        <img src="./images/a1_2.jpg " alt="파이낸셜사진 ">
+
+                    </li>
+                </div>
+                <li class="MTop ">
+
+
+                </li>
+                <li class="MBot ">
+
+                </li>
+                <li class="MTop ">
+
+                </li>
+                <li class="MBot ">
+
+                </li>
+            </ul>
+
+        </div>
+
+        </div>
+    </div>
+    <!--// main_wrap 페이지별 클래스 분기 -->
+
+</body>
+
+</html>

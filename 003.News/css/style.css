@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+.main_wrap {
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.gnb.type_01 {
+    /* css폴백 
+    -하위 호환이 먼저 먹게 하고 그위에 모던브라우저 속성을 
+    넣으면 모던 브라우저에서 로드시 폴백값은 표현되지 않음
+    구형 브라우저에서는 모던브라우저 속성이 무시되므로 먼저 기록한
+    색상값 #07bb7b 가 적용됨 */
+    background: #07bb7b;
+    background: linear-gradient(to right, #09c665 0, #07bb7b 52%, #0fa3a6 100%);
+    background-size: 100%;
+    color: #fff;
+}
+.gnb.type_01 .nav {
+    display: inline-block;
+    width: 100%;
+    height: 54px;
+    white-space: nowrap;
+    vertical-align: top;
+    position: relative;
+}
+.gnb.type_01 .nav .list_menu {
+    display: block;
+    line-height: 54px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 맑은고딕;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0 60px 0 20px;
+    box-sizing: border-box;
+}
+.gnb.type_01 .nav .list_menu li {
+    display: inline-block;
+}
+
+.gnb.type_01 .nav .list_menu li .menu {
+    height: 100%;
+}
+.gnb.type_01 .nav .btn_more {
+    display: inline-block;
+    line-height: 54px;
+    height: 54px;
+    vertical-align: top;
+    background: #119eb1;
+    background: linear-gradient(to left, #119eb1 0, #0fa3a6 34px, rgba(15, 163, 166, 0) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+
+
+
+
+.gnb.type_02 {
+    /* css폴백 
+    -하위 호환이 먼저 먹게 하고 그위에 모던브라우저 속성을 
+    넣으면 모던 브라우저에서 로드시 폴백값은 표현되지 않음
+    구형 브라우저에서는 모던브라우저 속성이 무시되므로 먼저 기록한
+    색상값 #07bb7b 가 적용됨 */
+    background: #07bb7b;
+    background: linear-gradient(to right, #09c665 0, #07bb7b 52%, #0fa3a6 100%);
+    background-size: 100%;
+    color: #fff;
+}
+.gnb.type_02 .nav {
+    height: 54px;
+    position: relative;
+}
+.gnb.type_02 .nav .list_menu {
+    display: flex;
+    width: calc(100% - 34px);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 맑은고딕;
+    overflow-y: hidden;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding: 0px 20px 0 20px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+}
+
+ul.list_menu {}
+.gnb.type_02 .nav .list_menu li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.gnb.type_02 .nav .list_menu li .menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 6px;
+}
+.gnb.type_02 .nav .btn_more {
+    display: block;
+    line-height: 54px;
+    height: 54px;
+    background: linear-gradient(to left, #119eb1 0, #0fa3a6 34px, rgba(15, 163, 166, 0) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 45px;
+}
+
+@media screen and (min-width: 720px) {
+    .gnb.type_02 .nav .list_menu {
+        justify-content: center;
+    }
+}
